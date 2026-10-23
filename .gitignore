@@ -50,6 +50,7 @@ Thumbs.db
 # Locally generated model artifacts and figures
 /models/**
 !/models/README.md
+!/models/random_forest_credit_model.pkl
 /Images/
 /images/
 /figures/

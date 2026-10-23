@@ -25,8 +25,12 @@ This project uses the German Credit dataset from Kaggle's [German Credit Risk - 
 | --- | --- |
 | `data/` | Dataset instructions; the CSV is kept local and excluded from Git |
 | `docs/` | Original formal report and [project documentation](docs/project_documentation.md) |
-| `models/` | Artifact instructions; saved model and scaler are kept local and excluded from Git |
+| `models/` | Published baseline Random Forest and [artifact documentation](models/README.md); the scaler remains local and excluded from Git |
 | `notebooks/` | Authoritative exploratory notebook |
+
+## Use the saved forest
+
+The root [inference module](inference.py) provides `predict_applicant(record)` and `predict_batch(records)` for single and batch predictions. It validates the nine raw fields, applies the fixed encoding in the [preprocessing specification](docs/inference-preprocessing-specification.md), and returns a `Bad` or `Good` prediction plus both labelled model probabilities. The [model documentation](models/README.md) records the artifact hash, tested environment, and loading precautions. The dataset CSV is not needed to use the saved forest; model outputs are not lending decisions or calibrated guarantees.
 
 ## Reproduce the analysis
 
