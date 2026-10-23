@@ -15,6 +15,10 @@ The original notebook encodes `good` risk as 1 and `bad` risk as 0. The followin
 
 The tuned forest was an experiment and did not improve the held-out accuracy or ROC-AUC. The [formal report](docs/Credit%20Scoring%20Report.docx) and [notebook](notebooks/01_dataset_exploration.ipynb) retain the analysis, plots, derived outputs, and conclusions. Saved row-level previews were removed pending verification of dataset redistribution terms.
 
+## Dataset Source
+
+This project uses the German Credit dataset from Kaggle's [German Credit Risk - With Target](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk) listing by Leonardo Ferreira (`kabure`). The dataset file remains local and excluded from Git; this repository makes no licence or redistribution claim.
+
 ## Repository layout
 
 | Path | Contents |
@@ -26,7 +30,7 @@ The tuned forest was an experiment and did not improve the held-out accuracy or 
 
 ## Reproduce the analysis
 
-The dataset was obtained from Kaggle. An incomplete first download was replaced with a second Kaggle download for the completed analysis. The exact listing and redistribution terms have not been verified, so the CSV is excluded from Git. Obtain the dataset separately from its verified source and place it at `data/german_credit_data.csv` before running the notebook. [Dataset details](data/README.md) provide the expected columns and counts, but are not proof of source or licence.
+An incomplete first download was replaced with a second Kaggle download for the completed analysis. The CSV is excluded from Git, so a separately obtained copy must be present at `data/german_credit_data.csv` before the notebook runs. [Dataset details](data/README.md) provide the expected columns and counts.
 
 In Windows PowerShell, run the following from the repository root with Python 3.14 available. Use a **new** environment: the existing `.venv/` is incomplete and should not be used.
 
@@ -49,4 +53,4 @@ The pinned versions were observed in the available working Python environment; t
 
 The 1,000-record dataset is small, contains missing account values, and has a 70/30 target split. The reported metrics reflect one stratified 80/20 split; they do not establish performance on other populations or future lending conditions. The selected model identifies only 27 of 60 `bad` cases in the test set. Feature importances describe how the forest used its encoded inputs and **are not causal evidence**. No fairness, calibration, drift, or deployment validation is documented. This is an experimental study, not a system for real-world credit decisions.
 
-The download platform is known to be Kaggle, but the exact listing, original attribution, licence, and redistribution permissions have not been verified. No dataset file or licence claim is published here.
+The Kaggle listing is linked above. This repository does not publish the dataset or assert its licence or redistribution permissions.

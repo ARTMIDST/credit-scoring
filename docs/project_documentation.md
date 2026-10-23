@@ -2,7 +2,7 @@
 
 ## Purpose and source material
 
-This study predicts the `Risk` category for 1,000 credit applicants. The authoritative project records are the [original notebook](../notebooks/01_dataset_exploration.ipynb), with its analysis and saved plots, and the [formal report](Credit%20Scoring%20Report.docx). The dataset was downloaded from Kaggle; an incomplete first download was replaced with a second Kaggle download used for the completed analysis. The exact listing, original attribution, licence, and redistribution terms remain unverified, so the CSV stays local and excluded from Git.
+This study predicts the `Risk` category for 1,000 credit applicants. The authoritative project records are the [original notebook](../notebooks/01_dataset_exploration.ipynb), with its analysis and saved plots, and the [formal report](Credit%20Scoring%20Report.docx). The dataset was downloaded from Kaggle; an incomplete first download was replaced with a second Kaggle download used for the completed analysis. The confirmed source is [German Credit Risk - With Target](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk) on Kaggle (publisher/slug: `kabure`; listing author: Leonardo Ferreira). The dataset's licence and redistribution permissions remain unverified, so the CSV stays local and excluded from Git.
 
 ## Dataset and preparation
 
