@@ -1,4 +1,4 @@
-# Stage F2 inference implementation report
+# Inference implementation report
 
 ## Result and readiness
 
