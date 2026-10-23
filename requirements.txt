@@ -1,0 +1,8 @@
+# Versions observed in the working Python 3.14.7 environment.
+# Direct dependencies imported by notebooks/01_dataset_exploration.ipynb.
+joblib==1.5.3
+matplotlib==3.11.2
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+seaborn==0.13.2

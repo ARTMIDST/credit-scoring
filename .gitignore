@@ -1,0 +1,59 @@
+# Python environments and local configuration
+.venv*/
+venv*/
+env*/
+.env
+.env.*
+!.env.example
+.aws/
+.kube/
+credentials*.json
+service-account*.json
+secrets*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa*
+id_ed25519*
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.jupyter/
+.ipython/
+
+# Temporary and editor files
+Untitled*.ipynb
+*.tmp
+*.temp
+*.bak
+*.swp
+*.orig
+*.log
+~$*
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dataset redistribution permission has not been established
+/data/**
+!/data/README.md
+
+# Locally generated model artifacts and figures
+/models/**
+!/models/README.md
+/Images/
+/images/
+/figures/
+
+# Local notebook execution outputs
+/.artifacts/
+/outputs/
